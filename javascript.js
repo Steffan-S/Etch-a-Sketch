@@ -24,8 +24,13 @@ function createGrid(grid){
     const gridTotal = grid * grid;    
     console.log(gridTotal + ' creating new grid');
 
+    const gridItemHeight = 480 / grid;
+
     for (i = 0; i < gridTotal; i++){
         const div = document.createElement('div');
+        div.style.height = gridItemHeight + 'px';
+        div.style.width = gridItemHeight + 'px';
+        
         div.addEventListener('mouseover', () => {
             div.style.backgroundColor = '#16264C';
             div.style.borderColor = '#0f1b37';
