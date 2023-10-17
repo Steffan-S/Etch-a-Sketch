@@ -4,8 +4,26 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+}
+
 .main-container {
     width: 480px;
     height: 480px;
-    background-color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.108);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main-container div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
 }
